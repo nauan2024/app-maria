@@ -1,16 +1,16 @@
 import React from 'react';
 import { StatusBar, Text, View } from 'react-native';
 import { MaterialCommunityIcons, Feather } from '@expo/vector-icons';
-
-// O botão que nós componentizamos na última etapa
+import { Image } from 'react-native';
+import imgmaria from "../../assets/imgmaria.png"
 import TagButton from "../../components/TagButton";
-
+import { MarIAOwl } from './styles';
 import {
   Container, ContentScroll, Header, HeaderTop, TagSuaRegiao, TagSuaRegiaoText,
   ProfileArea, ProfileName, ProfileAvatar, AddressTitle, AddressSubtitle,
   CardsContainer, Card, CardBorderLeft, CardHeader, DotGreen, CardSubtitle,
   IconBoxPurple, CardTitle, CardTime, TagsRow, TagCataBagulho, TagCataBagulhoText,
-  RowCards, SmallCard, SmallCardText, BottomNavContainer, NavItem, NavText, MascotFloat
+  RowCards, SmallCard, SmallCardText, BottomNavContainer, NavItem, NavText, 
 } from './styles';
 
 export default function Home() {
@@ -68,20 +68,17 @@ export default function Home() {
             </TagsRow>
           </Card>
 
-          {/* CARTÃO 2: CATA-BAGULHO */}
           <CardBorderLeft>
             <CardHeader>
               <TagCataBagulho>
                 <TagCataBagulhoText>Operação cata-bagulho</TagCataBagulhoText>
               </TagCataBagulho>
-              {/* O ícone do sofá vai para a direita usando marginLeft: 'auto' */}
               <MaterialCommunityIcons name="sofa-outline" size={24} color="#7B2CBF" style={{ marginLeft: 'auto' }} />
             </CardHeader>
             <CardTitle>Domingo</CardTitle>
             <CardTime>07:00 - 10:00</CardTime>
           </CardBorderLeft>
 
-          {/* BOTÕES LEMBRETES E MAPA */}
           <RowCards>
             <SmallCard>
               <Feather name="bell" size={26} color="#000" />
@@ -96,12 +93,8 @@ export default function Home() {
         </CardsContainer>
       </ContentScroll>
 
-      {/* MASCOTE FLUTUANDO (Apenas um Emoji por enquanto, até você colocar a imagem da coruja) */}
-      <MascotFloat>
-         <Text style={{fontSize: 50}}>🦉</Text>
-      </MascotFloat>
+    <MarIAOwl source={imgmaria} />
 
-      {/* MENU INFERIOR FIXO */}
       <BottomNavContainer>
         <NavItem>
           <Feather name="chevron-left" size={24} color="#555" />

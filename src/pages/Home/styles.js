@@ -3,6 +3,7 @@ import styled from 'styled-components/native';
 export const Container = styled.SafeAreaView`
   flex: 1;
   background-color: #F8F9FA; /* Fundo cinza bem clarinho */
+  position: relative;
 `;
 
 export const ContentScroll = styled.ScrollView.attrs({
@@ -211,8 +212,8 @@ export const NavText = styled.Text`
 `;
 
 /* MASCOTE VOANDO */
-export const MascotFloat = styled.View`
+export const MarIAOwl = styled.Image`
   position: absolute;
-  bottom: 90px;
+  bottom:85px;
   right: 20px;
 `;
