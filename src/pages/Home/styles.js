@@ -2,22 +2,20 @@ import styled from 'styled-components/native';
 
 export const Container = styled.SafeAreaView`
   flex: 1;
-  background-color: #F8F9FA; /* Fundo cinza bem clarinho */
+  background-color: #F8F9FA; 
   position: relative;
 `;
 
 export const ContentScroll = styled.ScrollView.attrs({
-  /* Espaço sobrando no final para a barra inferior não esconder o conteúdo */
   contentContainerStyle: { paddingBottom: 120 }, 
   showsVerticalScrollIndicator: false,
 })``;
 
-/* CABEÇALHO VERDE COM BORDA ARREDONDADA */
 export const Header = styled.View`
   background-color: #359D73;
   padding-top: 60px;
   padding-horizontal: 25px;
-  padding-bottom: 70px; /* Espaço extra para os cartões subirem */
+  padding-bottom: 70px; 
   border-bottom-left-radius: 40px;
   border-bottom-right-radius: 40px;
 `;
@@ -211,7 +209,6 @@ export const NavText = styled.Text`
   font-weight: 500;
 `;
 
-/* MASCOTE VOANDO */
 export const MarIAOwl = styled.Image`
   position: absolute;
   bottom:85px;
