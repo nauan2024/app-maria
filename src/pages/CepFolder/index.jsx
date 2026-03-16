@@ -4,6 +4,8 @@ import { InputCep } from "./styles";
 import { Text } from "react-native";
 import { ImageDetail } from "./styles";
 import { Image } from "react-native";
+import { ButtonPesquisar } from "./styles";
+import { ButtonText } from "./styles";
 export default function CepFolder() {
   return (
     <Container>
@@ -12,6 +14,9 @@ export default function CepFolder() {
         <Text>Onde você mora?</Text>
         <Text>Qual seu CEP?</Text>
      <InputCep placeholder="Digite seu CEP" />
+    <ButtonPesquisar onPress={() => {}}>
+      <ButtonText>Pesquisar</ButtonText>
+    </ButtonPesquisar>
       </GroupInput>
     </Container>
   );

@@ -12,6 +12,7 @@ export const GroupInput = styled.View`
   align-items: center;
   margin-top: 20px;
   padding-horizontal: 25px;
+  background-color: #35A17C;
 `;
 
 export const InputCep = styled.TextInput`
@@ -26,4 +27,17 @@ width: 100%;
 export const ImageDetail = styled.Image`
   height: 200px;
   margin-bottom: 20px;
+`;
+
+export const ButtonPesquisar = styled.TouchableOpacity`
+  background-color: #CFC0FE;
+  border-radius: 10px;
+  padding: 25px 8px;
+`;
+
+export const ButtonText = styled.Text`
+  color: #FFF;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
 `;

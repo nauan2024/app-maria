@@ -107,7 +107,6 @@ export default function Home() {
         </NavItem>
         
         <NavItem>
-          {/* Aqui vai o ícone da corujinha redonda do menu. Usando user temporário */}
           <View style={{ width: 30, height: 30, borderRadius: 15, backgroundColor: '#359D73', justifyContent: 'center', alignItems: 'center' }}>
             <Feather name="smile" size={16} color="#FFF" />
           </View>
