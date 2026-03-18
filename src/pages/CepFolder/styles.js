@@ -16,7 +16,7 @@ export const GroupInput = styled.View`
 `;
 
 export const InputCep = styled.TextInput`
-width: 100%;
+  width: 100%;
   height: 50px;
   background-color: #FFF;
   border-radius: 10px;
@@ -41,3 +41,4 @@ export const ButtonText = styled.Text`
   font-weight: bold;
   text-align: center;
 `;
+

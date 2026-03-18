@@ -3,7 +3,7 @@ import styled from 'styled-components/native';
 export const ButtonContainer = styled.TouchableOpacity`
     flex-direction: row;
     align-items: center;
-    background-color: ${(props) => props.bgColor || '#EBEBEB'}; 
+    background-color:'#EBEBEB'; 
     padding: 6px 12px;
     border-radius: 20px; 
     margin-right: 10px;
@@ -11,7 +11,7 @@ export const ButtonContainer = styled.TouchableOpacity`
 
 export const ButtonText = styled.Text`
     font-size: 14px;
-    color: ${(props) => props.textColor || '#555555'}; 
+    color: '#555555'; 
     margin-left: 6px;
     font-weight: 600;
 `;

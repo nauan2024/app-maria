@@ -19,7 +19,6 @@ export default function Home() {
       <StatusBar barStyle="light-content" backgroundColor="#359D73" />
 
       <ContentScroll>
-        {/* CABEÇALHO VERDE CURVADO */}
         <Header>
           <HeaderTop>
             <TagSuaRegiao>
@@ -30,6 +29,7 @@ export default function Home() {
               <ProfileName>Maria</ProfileName>
               <ProfileAvatar>
                 <Feather name="user" size={20} color="#FFF" />
+                /* Ícone de usuário dentro do avatar, é de uma biblioteca especifica que coloquei no projeto da expo, podemos testar o quão viavel ela é ou só simplesmente baixar os icones */
               </ProfileAvatar>
             </ProfileArea>
           </HeaderTop>
@@ -40,13 +40,13 @@ export default function Home() {
 
         <CardsContainer>
           
-          {/* CARTÃO 1: PRÓXIMA COLETA */}
           <Card>
             <CardHeader>
               <DotGreen />
               <CardSubtitle>PRÓXIMA COLETA</CardSubtitle>
               <IconBoxPurple>
                 <MaterialCommunityIcons name="truck-outline" size={20} color="#7B2CBF" />
+                /* caminhãozinho, é de uma biblioteca especifica que coloquei no projeto da expo, podemos testar o quão viavel ela é ou só simplesmente baixar os icones */
               </IconBoxPurple>
             </CardHeader>
             <CardTitle>Amanhã</CardTitle>
@@ -58,12 +58,14 @@ export default function Home() {
                 bgColor="#EAEAEA"
                 textColor="#555"
                 icon={<MaterialCommunityIcons name="trash-can-outline" size={14} color="#555" />}
+                /* desenho de uma lixeira, é de uma biblioteca especifica que coloquei no projeto da expo, podemos testar o quão viavel ela é ou só simplesmente baixar os icones */
               />
               <TagButton 
                 text="Reciclável"
                 bgColor="#D1F2EB"
                 textColor="#00A86B"
                 icon={<MaterialCommunityIcons name="recycle" size={14} color="#00A86B" />}
+                /* desenho de reciclagem, é de uma biblioteca especifica que coloquei no projeto da expo, podemos testar o quão viavel ela é ou só simplesmente baixar os icones */
               />
             </TagsRow>
           </Card>
@@ -74,6 +76,7 @@ export default function Home() {
                 <TagCataBagulhoText>Operação cata-bagulho</TagCataBagulhoText>
               </TagCataBagulho>
               <MaterialCommunityIcons name="sofa-outline" size={24} color="#7B2CBF" style={{ marginLeft: 'auto' }} />
+              /* desenho de um sofá humilde, é de uma biblioteca especifica que coloquei no projeto da expo, podemos testar o quão viavel ela é ou só simplesmente baixar os icones */
             </CardHeader>
             <CardTitle>Domingo</CardTitle>
             <CardTime>07:00 - 10:00</CardTime>
@@ -82,10 +85,12 @@ export default function Home() {
           <RowCards>
             <SmallCard>
               <Feather name="bell" size={26} color="#000" />
+              /* desenho de um sino, é de uma biblioteca especifica que coloquei no projeto da expo, podemos testar o quão viavel ela é ou só simplesmente baixar os icones, voltada para icones mais minimalistas */
               <SmallCardText>Lembretes</SmallCardText>
             </SmallCard>
             <SmallCard>
               <Feather name="map" size={26} color="#000" />
+              /* desenho de um mapa, é de uma biblioteca especifica que coloquei no projeto da expo, podemos testar o quão viavel ela é ou só simplesmente baixar os icones, voltada para icones mais minimalistas */
               <SmallCardText>Mapa</SmallCardText>
             </SmallCard>
           </RowCards>
@@ -98,17 +103,20 @@ export default function Home() {
       <BottomNavContainer>
         <NavItem>
           <Feather name="chevron-left" size={24} color="#555" />
+          /* desenho de uma seta para esquerda, é de uma biblioteca especifica que coloquei no projeto da expo, podemos testar o quão viavel ela é ou só simplesmente baixar os icones, voltada para icones mais minimalistas */
           <NavText>Voltar</NavText>
         </NavItem>
         
         <NavItem>
           <Feather name="home" size={24} color="#555" />
+          /* desenho de uma casa, é de uma biblioteca especifica que coloquei no projeto da expo, podemos testar o quão viavel ela é ou só simplesmente baixar os icones, voltada para icones mais minimalistas */
           <NavText>Home</NavText>
         </NavItem>
         
         <NavItem>
           <View style={{ width: 30, height: 30, borderRadius: 15, backgroundColor: '#359D73', justifyContent: 'center', alignItems: 'center' }}>
             <Feather name="smile" size={16} color="#FFF" />
+            /* desenho de um rosto sorridente, é de uma biblioteca especifica que coloquei no projeto da expo, podemos testar o quão viavel ela é ou só simplesmente baixar os icones, voltada para icones mais minimalistas */
           </View>
         </NavItem>
       </BottomNavContainer>

@@ -55,7 +55,7 @@ export const ProfileAvatar = styled.View`
   width: 36px;
   height: 36px;
   border-radius: 18px;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: #FFFFFF4D;
   align-items: center;
   justify-content: center;
 `;
@@ -72,10 +72,9 @@ export const AddressSubtitle = styled.Text`
   margin-top: 4px;
 `;
 
-/* ÁREA DOS CARTÕES */
 export const CardsContainer = styled.View`
   padding-horizontal: 20px;
-  margin-top: -40px; /* Isso faz os cartões subirem em cima do verde! */
+  margin-top: -40px; 
 `;
 
 export const Card = styled.View`
@@ -83,8 +82,8 @@ export const Card = styled.View`
   border-radius: 20px;
   padding: 20px;
   margin-bottom: 20px;
-  elevation: 4; /* Sombra no Android */
-  shadow-color: #000; /* Sombra no iOS */
+  elevation: 4; 
+  shadow-color: #000;
   shadow-offset: 0px 4px;
   shadow-opacity: 0.05;
   shadow-radius: 10px;
@@ -92,7 +91,7 @@ export const Card = styled.View`
 
 export const CardBorderLeft = styled(Card)`
   border-left-width: 6px;
-  border-left-color: #A3E4B7; /* Bordinha verde clara na esquerda */
+  border-left-color: #A3E4B7; 
 `;
 
 export const CardHeader = styled.View`
@@ -153,7 +152,6 @@ export const TagCataBagulhoText = styled.Text`
   font-weight: 600;
 `;
 
-/* CARTÕES MENORES (Lembretes e Mapa) */
 export const RowCards = styled.View`
   flex-direction: row;
   justify-content: space-between;
@@ -182,14 +180,13 @@ export const SmallCardText = styled.Text`
   color: #222;
 `;
 
-/* MENU INFERIOR FIXO */
 export const BottomNavContainer = styled.View`
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
   background-color: #FFF;
   padding-vertical: 10px;
-  padding-bottom: 20px; /* Evita cortar em telas sem borda */
+  padding-bottom: 20px; 
   border-top-width: 1px;
   border-top-color: #F0F0F0;
   position: absolute;

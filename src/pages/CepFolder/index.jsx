@@ -15,6 +15,7 @@ export default function CepFolder() {
         <Text>Qual seu CEP?</Text>
      <InputCep placeholder="Digite seu CEP" />
     <ButtonPesquisar onPress={() => {}}>
+      /*On press necessário para definir a ação do botão*/
       <ButtonText>Pesquisar</ButtonText>
     </ButtonPesquisar>
       </GroupInput>
